@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+  <style>
+    body,h2,h3 {font-family: "Raleway", sans-serif}
+    h1{font-family: 'Roboto Condensed', sans-serif; font-size: 50px}
+    body, html {height: 100%}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 150px;background: #;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 700px) {#main {margin-left: 0}}
+    /* Style the container/contact section */
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    /* Create two columns that float next to eachother */
+    .column {
+      float: left;
+      width: 50%;
+      margin-top: 6px;
+      padding: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    
+  </style>
+<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<body class="w3-white">
+<!-- Navbar (top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card ">
+     <a href="index.html" class="w3-bar-item">
+     <b><img src="./anh/LOGO.png" alt="Logo" style="width:40px; margin: 0px 0px 0px 25px"></b></a>
+     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-right"><i class="fa fa-search"></i></a>
+    <div class="w3-display-middle">
+     <a href="project.html" class="w3-bar-item w3-button w3-padding-16">Projects</a>
+     <a href="about.html" class="w3-bar-item w3-button w3-padding-16">About</a>
+     <a href="ct.html" class="w3-bar-item w3-button w3-padding-16">Contact</a>
+    </div>
+  </div>
+</div>
+<!----Abouts------>
+<section id="Abouts">
+<div class="w3-container w3-padding-64">
+  <div class="w3-content">
+    <br>
+    <img src="./anh/23.jpg" style="width:100%;margin:32px 0">
+    <p>My name is Ha. I am a recent graduate student at FPT university. My major is Graphic design. I have spent  three years improving my skill in design. <span id="dots">...</span><span id="more">Last years, I participated in an internship at a design agency, and it taught me analytic. My short term goal is to find a position where I can use the knowledge and strengths that I have. I want to take part in the growth and success of the company I work for. You can rate my capabilities through my products here. Thank you !!</span>
+    </p><br>
+   <button onclick="myFunction()" id="myBtn" type="button" class="btn btn-primary" style=" background-color: #fc8300; border-radius: 12px; color: white; border: 1px solid #e7e7e7; font-size: 16px; margin: 4px 2px; padding: 6px 15px; cursor: pointer;">Read more</button>
+  </div>
+</div>
+</section>
+
+

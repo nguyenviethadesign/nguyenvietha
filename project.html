@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<style>
+body,h2,h3 {font-family: "Raleway", sans-serif}
+h1{font-family: 'Roboto Condensed', sans-serif; font-size: 50px}
+body, html {height: 100%}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 150px;background: #;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 700px) {#main {margin-left: 0}}
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+</style>
+<body class="w3-white">
+<!-- Navbar (top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding">
+     <a href="index.html" class="w3-bar-item">
+     <b><img src="./ANH/LOGO.png" alt="Logo" style="width:40px; margin: 0px 0px 0px 25px"></b></a>
+     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-right"><i class="fa fa-search"></i></a>
+    <div class="w3-display-middle">
+     <a href="project.html" class="w3-bar-item w3-button w3-padding-16">Projects</a>
+     <a href="about.html" class="w3-bar-item w3-button w3-padding-16">About</a>
+     <a href="ct.html" class="w3-bar-item w3-button w3-padding-16">Contact</a>
+    </div>
+  </div>
+</div>
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-hide-small w3-center w3-white w3-padding-16"
+style="margin: 52px 0px 0px 0px">
+  <!-- Avatar image in top left corner -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black"><p>Product design</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black"><p>UI/UX</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black"><p>Visual design</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black"><p>Interaction design</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" >
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Product design</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% ">UI/UX</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Visual design</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Interaction design</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" style="margin: 10px 0px 0px 0px ">
+
+  <!-- Header/Home -->
+  <header class="w3-container w3-center w3-black" id="home">
+    <img src="./anh/7.jpg" alt="boy" class="w3-image" width="1100" height="1200">
+    <img src="./anh/2.gif" alt="boy" class="w3-image" width="1100" height="1200">
+    <img src="./anh/9.jpg" alt="boy" class="w3-image" width="1100" height="1200">
+    <img src="./anh/15.gif" alt="boy" class="w3-image" width="1100" height="1200">
+    <img src="./anh/8.gif" alt="boy" class="w3-image" width="1100" height="1200">
+    <img src="./anh/11.jpg" alt="boy" class="w3-image" width="1100" height="1200">
+    <img src="./anh/12.jpg" alt="boy" class="w3-image" width="1100" height="1200">
+    <img src="./anh/10.gif" alt="boy" class="w3-image" width="1100" height="1200">
+    <img src="./anh/4.jpg" alt="boy" class="w3-image" width="1100" height="1200">
+    <img src="./anh/3.gif" alt="boy" class="w3-image" width="1100" height="1200">
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content w3-center" id="about">
+    <h1>UI/UX</h1>
+    <br>
+    <br>
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:10px -70px">
+      <div class="w3-half">
+        <img src="./anh/4.jpg" style="width:100%">
+        <img src="./anh/3.gif" style="width:100%">
+        <img src="./anh/19.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="./anh/20.jpg" style="width:100%">
+        <img src="./anh/22.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+</header>
+
+</body>
